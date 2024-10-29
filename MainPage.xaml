@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exchange5.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <HorizontalStackLayout>
+            <Label
+                x:Name="GBPDisplay"
+                Text="Kurs NBP1"/>
+            <Image x:Name="Image1"
+                   MaximumHeightRequest="50"
+                   MaximumWidthRequest="50"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+            <Label
+                x:Name="USDDisplay"
+                Text="Kurs NBP11"/>
+            <Image x:Name="Image2"
+                   MaximumHeightRequest="50"
+                   MaximumWidthRequest="50"/>
+            </HorizontalStackLayout>
+                
+            <HorizontalStackLayout>
+            <Label
+                x:Name="EURDisplay"
+                Text="Kurs NBP111"/>
+            <Image x:Name="Image3"
+                   MaximumHeightRequest="50"
+                   MaximumWidthRequest="50"/>
+            </HorizontalStackLayout>
+
+            <Button
+                x:Name="EX"
+                Text="Działaj !!!" 
+                Clicked="ExClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
